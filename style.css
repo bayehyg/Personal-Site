@@ -53,8 +53,18 @@ h1 {
 .gallary {
     margin-top: 50px;
     display: flex;
+    gap: 10px;
     justify-content: center;
     align-items: center;
+}
+@media(){
+    .gallary {
+        margin-top: 50px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .col {
