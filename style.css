@@ -16,7 +16,7 @@ body {
     color: #fafafa;
 }
 
-p {
+p { 
     color: #9f9f9f;
 }
 
@@ -28,7 +28,7 @@ h1 {
 .white-text {
     font-size: 50px;
     font-family: serif;
-    color: #F1F1F1 !important;
+    color: #F1F1F1;
 
 }
 
@@ -53,19 +53,57 @@ h1 {
 .gallary {
     margin-top: 50px;
     display: flex;
-    gap: 10px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
-@media(){
+
+@media(max-width: 1024px){
     .gallary {
         margin-top: 50px;
         display: flex;
+        flex-direction: column;
         gap: 10px;
         justify-content: center;
         align-items: center;
     }
 }
+
+.card {
+    background-color: #fff; /* Background color for the cards */
+    border: 1px solid #e0e0e0; /* Border for the cards */
+    border-radius: 8px; /* Rounded corners for the cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+    transition: transform 0.2s; /* Add a smooth transformation effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Enlarge the card slightly on hover */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Adjust the title font size */
+    color: #333; /* Title text color */
+    margin: 0.5rem 0; /* Margin above and below the title */
+}
+
+.card-text {
+    font-size: 1rem; /* Adjust the text font size */
+    color: #666; /* Text color */
+}
+
+.card-body {
+    padding: 1rem; /* Add some padding inside the card body */
+}
+
+.card-img-top {
+    object-fit: cover; /* Ensure the image covers the card properly */
+    border-top-left-radius: 8px; /* Round the top-left corner of the image */
+    border-top-right-radius: 8px; /* Round the top-right corner of the image */
+}
+
+/* You can also style other card components like links, buttons, etc. if needed */
+
 
 .col {
     width: 300px !important;
