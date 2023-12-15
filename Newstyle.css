@@ -34,6 +34,10 @@ html {
     display: flex;
     gap: 50px;
     justify-content: space-around;
+    
+}
+#projects > div {
+    background-color: #f1f1f1;
 }
 #profile {
     width: 50%; /* Add space between sections */
